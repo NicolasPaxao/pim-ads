@@ -1,0 +1,71 @@
+{
+    "cliente": {
+        "nome": "Luiz Antonio",
+        "cpf": "14447888889",
+        "cnh": "23151561651",
+        "rg": "111111111",
+        "dataNascimento": "11/11/2000",
+        "estadoCivil": 1,
+        "sexo": 0,
+        "razaoSocial": "",
+        "contratoSocial": "",
+        "cnpj": "",
+        "dataCriacao": "",
+        "tipoCliente": 0,
+        "status": 0,
+        "id": 1,
+        "email": "luizantonio@gmail.com",
+        "senha": "Nick123@",
+        "cep": "02504141",
+        "logradouro": "Rua Doideira, N150 - São Paulo",
+        "telefone": "11981414521"
+    },
+    "apolices": [
+        {
+            "id": 4,
+            "planoId": 2,
+            "automovel": {
+                "id": 1,
+                "idCliente": 1,
+                "modelo": "Sandero Expression 1.0",
+                "marca": "Renault",
+                "anoModelo": "2015",
+                "cor": "Vermelho",
+                "placa": "FDR1515",
+                "renavam": "56415241521",
+                "numeroMotor": "2020012010201",
+                "crlv": "41154545454",
+                "status": 2
+            },
+            "clienteNome": "Luiz Antonio",
+            "planoNome": "Ituran - Premium",
+            "planoValor": 699,
+            "tempoVigencia": 12,
+            "formaPagamento": 1,
+            "dataCriacao": "2022-11-11T15:47:30.533"
+        },
+        {
+            "id": 5,
+            "planoId": 3,
+            "automovel": {
+                "id": 2,
+                "idCliente": 1,
+                "modelo": "Captur",
+                "marca": "Renault",
+                "anoModelo": "2000",
+                "cor": "Prata",
+                "placa": "FRR4477",
+                "renavam": "20212415415",
+                "numeroMotor": "303221564165456",
+                "crlv": "10104151515",
+                "status": 2
+            },
+            "clienteNome": "Luiz Antonio",
+            "planoNome": "Ituram - Super",
+            "planoValor": 1200,
+            "tempoVigencia": 12,
+            "formaPagamento": 2,
+            "dataCriacao": "2022-11-11T15:48:48.78"
+        }
+    ]
+}

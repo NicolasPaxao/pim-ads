@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">pim_mobile</string>
+    <string name="logo">Logo</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="welcomeSub">Segurança que cabe no seu bolso.</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="requestOrder">Não possui um plano? Começe por aqui!</string>
+    <string name="requestOrderButtonText">Solicitar Orçamento</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="politica_de_privacidade">Politica de Privacidade</string>
+    <string name="sobre_a_tsb">Sobre a TSB</string>
+    <string name="exit">Sair</string>
+    <string name="central_de_ajuda">Central de ajuda</string>
+    <string name="content_about">No Brasil, a Top Seguros é líder no mercado de monitoramento e recuperação veicular. Oferecemos soluções de proteção veicular para todos os tipos de veículos. Rastreador veicular com garantia contra roubo e furto em caso de não recuperação. Até 70% mais barato que um seguro auto tradicional, além de assistências e comodidades que proporcionam ainda mais segurança e tranquilidade às pessoas.</string>
+    <string name="ok">OK</string>
+    <string name="sobre_a">Sobre a</string>
+    <string name="top_seguros_brasil">TOP SEGUROS BRASIL</string>
+    <string name="content_privacy">Aqui na Top Seguro, temos uma equipe de segurança dedicada 24hs a proteger nossos clientes de roubo e furto. A sua privacidade é importante para nós. É política da Top Seguros respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site topseguros. Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazendo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</string>
+    <string name="privacidade">PRIVACIDADE</string>
+    <string name="politica_de">POLITICA DE</string>
+    <string name="content_help">Caso precise de ajuda. Temos aqui alguns canais que poderão lhe ajudar!\n\nContato via Telefone.\n(11) 2143-6311\n\nContato via Whatsapp.\n(11) 97121-6246\n\nContato via E-mail.\ncontato@topsegsbrasil.com\n\nCaso nenhuma dessas opções tenha te ajudado, entre em contato diretamento com o vendedor que te atendeu! Gratos!</string>
+    <string name="central_de">CENTRAL DE</string>
+    <string name="ajuda">AJUDA</string>
+    <string name="sureToExit">Deseja realmente sair do sistema?</string>
+    <string name="meus_veiculos">Meus Veículos</string>
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>web_api</name>
+    </assembly>
+    <members>
+        <member name="M:web_api.Controllers.ApoliceController.GetAllApolices">
+            <summary>
+            Retorna uma lista de apolices.
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ApoliceController.GetApoliceById(System.Int32)">
+            <summary>
+            Retorna uma apolice pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ApoliceController.PostApolice(web_api.Models.ApolicesModel)">
+            <summary>
+            Cria uma apolice nova
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ApoliceController.PutApolice(web_api.Models.ApolicesModel)">
+            <summary>
+            Altera os dados da apolice pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ApoliceController.DeleteApolice(System.Int32)">
+            <summary>
+            Deleta o registro de uma apolice pelo seu Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AssistenciaController.GetAllAssistencias">
+            <summary>
+            Retorna uma lista de assistencias.
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AssistenciaController.GetAssistenciaById(System.Int32)">
+            <summary>
+            Retorna uma assistencia pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AssistenciaController.PostAssistencia(web_api.Models.AssistenciaModel)">
+            <summary>
+            Cria uma assistencia nova
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AssistenciaController.PutAssistencia(web_api.Models.AssistenciaModel)">
+            <summary>
+            Altera os dados da assistencia pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AssistenciaController.DeleteAssistencia(System.Int32)">
+            <summary>
+            Deleta o registro de uma assistencia pelo seu Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AutomovelController.GetAllAutomoveis">
+            <summary>
+            Retorna uma lista de automoveis.
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AutomovelController.GetAutomovelById(System.Int32)">
+            <summary>
+            Retorna um automovel pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AutomovelController.PostAutomovel(web_api.Models.AutomovelModel)">
+            <summary>
+            Cria uma automovel novo
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AutomovelController.PutAutomovel(web_api.Models.AutomovelModel)">
+            <summary>
+            Altera os dados do automovel pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.AutomovelController.DeleteAutomovel(System.Int32)">
+            <summary>
+            Deleta o registro de um automovel pelo seu Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.GetPfClients">
+            <summary>
+            Retorna uma lista de clientes
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.GetClientById(System.Int32)">
+            <summary>
+            Retorna um cliente pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.PostClientPf(web_api.Models.ClienteModel)">
+            <summary>
+            Cria um cliente Pf
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.PostClientPj(web_api.Models.ClienteModel)">
+            <summary>
+            Cria um cliente Pj
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.PutClient(web_api.Models.ClienteModel)">
+            <summary>
+            Altera os dados possíveis do cliente
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.PutLoginClientPf(web_api.Models.ClienteModel)">
+            <summary>
+            Adiciona o login ao cliente Pf
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.PutLoginClientPj(web_api.Models.ClienteModel)">
+            <summary>
+            Adiciona o login ao cliente Pj
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.ChangeStatusClientById(web_api.Models.ClienteModel)">
+            <summary>
+            Muda o status do cliente
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.ClienteController.DeleteClient(System.Int32)">
+            <summary>
+            Deleta um cliente
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.CoberturaController.GetAllCoberturas">
+            <summary>
+            Retorna uma lista de coberturas.
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.CoberturaController.GetCoberturaById(System.Int32)">
+            <summary>
+            Retorna uma cobertura pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.CoberturaController.PostCobertura(web_api.Models.CoberturaModel)">
+            <summary>
+            Cria uma cobertura nova
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.CoberturaController.PutCobertura(web_api.Models.CoberturaModel)">
+            <summary>
+            Altera os dados da cobertura pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.CoberturaController.DeleteCobertura(System.Int32)">
+            <summary>
+            Deleta o registro de uma cobertura pelo seu Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.RetornaClienteController.ReturnClientProperties(System.String,System.String)">
+            <summary>
+            Retorna o cliente
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.SeguradoraController.GetAllSeguradoras">
+            <summary>
+            Retorna uma lista de seguradoras.
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.SeguradoraController.GetSeguradoraById(System.Int32)">
+            <summary>
+            Retorna uma seguradora pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.SeguradoraController.PostSeguradora(web_api.Models.PlanoModel)">
+            <summary>
+            Cria uma seguradora nova
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.SeguradoraController.PutSeguradora(web_api.Models.PlanoModel)">
+            <summary>
+            Altera os dados da seguradora pelo Id
+            </summary>
+        </member>
+        <member name="M:web_api.Controllers.SeguradoraController.DeleteSeguradora(System.Int32)">
+            <summary>
+            Deleta o registro de uma seguradora pelo seu Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.FuncionarioController.Get">
+            <summary>
+            Retorna uma lista de funcionarios.
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.FuncionarioController.GetFuncionarioById(System.Int32)">
+            <summary>
+            Retorna um funcionario pelo Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.FuncionarioController.Post(api_teste.Models.FuncionarioModel)">
+            <summary>
+            Cria uma funcionario novo
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.FuncionarioController.Put(api_teste.Models.FuncionarioModel)">
+            <summary>
+            Altera os dados do funcionario pelo Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.FuncionarioController.ChangeFuncionarioStatus(api_teste.Models.FuncionarioModel)">
+            <summary>
+            Muda o status do funcionario baseado no Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.FuncionarioController.Delete(System.Int32)">
+            <summary>
+            Deleta o registro de um usuário pelo seu Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.PlanoController.GetAllPlanos">
+            <summary>
+            Retorna uma lista de planos.
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.PlanoController.GetPlanoById(System.Int32)">
+            <summary>
+            Retorna um plano pelo Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.PlanoController.PostPlano(web_api.Models.PlanosModel)">
+            <summary>
+            Cria um plano novo
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.PlanoController.PutPlano(web_api.Models.PlanosModel)">
+            <summary>
+            Altera os dados do plano pelo Id
+            </summary>
+        </member>
+        <member name="M:api_teste.Controllers.PlanoController.DeletePlano(System.Int32)">
+            <summary>
+            Deleta o registro de um plano pelo seu Id
+            </summary>
+        </member>
+    </members>
+</doc>

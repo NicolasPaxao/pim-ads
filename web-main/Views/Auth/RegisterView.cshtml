@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "Registrar";
+}
+
+<script type="text/javascript">
+
+    function showInput() {
+        var isCpf = document.getElementById("isCpf");
+        var isCnpj = document.getElementById("isCnpj");
+        var cnpjInput = document.getElementById("cnpjInput");
+        var cpfInput = document.getElementById("cpfInput");
+        var cnpj = document.getElementById("cnpj");
+        var cpf = document.getElementById("cpf");
+
+        cpfInput.style.display = isCpf.checked ? "block" : "none";
+        cnpjInput.style.display = isCnpj.checked ? "block" : "none";
+        if (isCpf.checked) {
+            cnpj.value = "";
+        } else if (isCnpj.checked) {
+            cpf.value = "";
+        }
+    }
+</script>
+
+<style>
+    * {
+        margin: 0px auto;
+    }
+
+
+    body {
+        background-color: #397349;
+        font-family: Montserrat;
+        width: 100%;
+        height: 100%;
+    }
+
+    #form {
+        margin-top: 8vh;
+        align-self: center;
+        max-width: 500px;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .bloco-titulo {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .input {
+        border: none;
+        padding: 16px;
+    }
+
+    .botão {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Montserrat;
+        margin-top: 10px;
+        background-color: #397349;
+        border-radius: 8px;
+        border: none;
+        padding: 16px 56px;
+        cursor: pointer;
+    }
+
+    .text-obs {
+        padding: 0;
+    }
+
+    .error{
+        text-align: left;
+        margin: 12px 0;
+        font-weight:bold;
+        font-size:16px;
+        color: red;
+    }
+
+    .errorForm {
+        margin: 12px 0;
+        align-self: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: red;
+    }
+
+    .checkbox{
+        box-sizing: border-box;
+        appearance: none;
+        background: white;
+        outline: 2px solid #397349;
+        border: 3px solid white;
+        width: 16px;
+        height: 16px;
+    }
+
+    .checkbox:checked{
+        background: #397349;
+    }
+
+    .label-titel-checkbox{
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+    }
+
+</style>
+
+@model pim_web.ViewModels.RegisterViewModel
+
+<header class="cabecalhoPrincipal" style="background-color: #FFFFFF">
+    <div class="container">
+        <img src="~/img/tsblogo-removebg-preview.png" width="120">
+
+        <nav class="cabecalhoPrincipal-nav">
+            <a class="cabecalhoPrincipal-nav-link" asp-action="Index" asp-controller="Home" style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #000000; text-decoration: none;padding-right: 30px">HOME</a>
+            <a class="cabecalhoPrincipal-nav-link" href="#open-politica-modal" style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #000000; text-decoration: none;padding-right: 30px">PRIVACIDADE</a>
+            <div style="padding-right: 46px;">
+                <a asp-action="LoginView" asp-controller="Auth"><img src="~/img/iconeuser_black.png" width="42"></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div id="open-politica-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 675px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Politica de</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Privacidade</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Aqui na Top Seguro, temos uma equipe de segurança dedicada 24hs a proteger nossos clientes de roubo e furto. A sua privacidade é importante para nós. É política da Top Seguros respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site topseguros. Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazendo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+        <a style="float:right; padding-right: 16px; padding-left: 16px" href="#"><button class="submitButton">Ok</button></a>
+    </div>
+</div>
+
+<div id="form">
+    <form method="post">        
+        <div class="bloco-titulo">
+            <h3>Primeiro vamos verificar se você já é um cliente.</h3>
+        </div>
+        <div>
+            <input type="radio"
+                   id="isCpf"
+                   onclick="showInput()"
+                   class="checkbox"
+                   checked
+                   name="seletor" />
+            <label class="label-titel-checkbox" style="margin-right: 16px;" for="isCpf">Pessoa Física</label>
+            <input type="radio"
+                   id="isCnpj"
+                   class="checkbox"
+                   onclick="showInput()"
+                   name="seletor" />
+            <label class="label-titel-checkbox" for="isCnpj">Pessoa Jurídica</label>
+        </div>
+
+        <div id="cpfInput" class="single-input">
+            <input class="input" asp-for="@Model.Cliente.Cpf" type="text" id="cpf" maxlength="11"  />
+            <label asp-for="@Model.Cliente.Cpf">CPF</label>
+        </div>
+
+        <div id="cnpjInput" style="display: none;" class="single-input">
+            <input class="input" asp-for="@Model.Cliente.Cnpj" type="text" maxlength="11" id="cnpj"  />
+            <label asp-for="@Model.Cliente.Cnpj">CNPJ</label>
+        </div>
+
+        @if (TempData["resultFailCpf"] != null)
+        {
+            <div>
+                <p class="error">@TempData["resultFailCpf"]</p>
+
+            </div>
+        }
+        @if (TempData["resultFailCnpj"] != null)
+        {
+            <div>
+                <p class="error">@TempData["resultFailCnpj"]</p>
+
+            </div>
+        }
+
+        <div class="text-obs">
+            <h5>Digite uma senha para realizar seu cadastro</h5>
+        </div>
+        <div id="password" class="single-input">
+            <input class="input" asp-for="@Model.Cliente.Senha" type="password" maxlength="18" id="password" />
+            <label asp-for="@Model.Cliente.Senha">Senha</label>
+        </div>
+        <div id="confirmPassword" class="single-input">
+            <input class="input" asp-for="@Model.ConfirmSenha" type="password" maxlength="18" id="password"/>
+            <label asp-for="@Model.ConfirmSenha">Confirmar senha</label>
+        </div>
+
+        <div class="btn">
+            <input class="botão" type="submit" value="Validar" />
+        </div>
+        @if (TempData["formFail"] != null)
+        {
+            <p class="errorForm" style="margin-top:12px;">@TempData["formFail"]</p>
+        }
+        @if (TempData["resultRegistred"] != null){
+            <p class="errorForm" style="margin-top:12px;">@TempData["resultRegistred"]</p>
+        }
+    </form>
+
+
+</div>
+
+

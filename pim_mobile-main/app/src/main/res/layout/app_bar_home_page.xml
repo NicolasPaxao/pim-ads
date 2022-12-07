@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomePageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Pim_mobile.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primaryColor"
+            app:popupTheme="@style/Theme.Pim_mobile.PopupOverlay"
+            >
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/logo_login" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/topCard"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:background="@drawable/shape_home"/>
+
+    <TextView
+        android:id="@+id/helloUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Olá Usuário"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/helloUser"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"
+        android:text="O que deseja visualizar?"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCarsList"
+        android:layout_width="239dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/topCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="105dp"
+        android:backgroundTint="@color/primaryColor"
+        android:letterSpacing="0.2"
+        android:text="veículos"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_cars"
+        app:iconGravity="start"
+        app:iconPadding="0dp"
+        app:iconSize="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPlanList"
+        android:layout_width="239dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnCarsList"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/primaryColor"
+        android:letterSpacing="0.2"
+        android:text="APÓLICES"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_planos"
+        app:iconGravity="start"
+        app:iconPadding="0dp"
+        app:iconSize="40dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="versão: 1.0.0 demo"/>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,779 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<style>
+    * {
+        margin: 0px auto;
+    }
+</style>
+
+
+<header class="cabecalhoPrincipal" style="background-color: #397349">
+    <div class="container">
+        <img src="~/img/tsblogo-removebg-preview.png" width="120">
+
+        <nav class="cabecalhoPrincipal-nav">
+            <a class="cabecalhoPrincipal-nav-link" asp-action="Index" asp-controller="Home" style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #FFFFFF; text-decoration: none;padding-right: 30px">HOME</a>
+            <a class="cabecalhoPrincipal-nav-link" href="#open-politica-modal" style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #FFFFFF; text-decoration: none;padding-right: 30px">PRIVACIDADE</a>
+            <div style="padding-right: 46px;">
+                <a asp-action="LoginView" asp-controller="Auth"><img src="~/img/iconeuser.png" width="42"></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="background" align="center">
+    <h1 class="text-Title" style="padding-top: 68px;padding-bottom:5px">TOP SEGUROS BRASIL</h1>
+    <hr class="line" size="2" width="141px" color="white">
+    <h1 class="text-subTitle" style="padding-top: 34px;padding-bottom: 34px;">Segurança que cabe no seu bolso!</h1>
+    <a href="#open-modal"><button class="button-style"><strong>SOLICITAR <br> ORÇAMENTO</strong></button></a>
+    <!-- Espaço -->
+    <table height="56">
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- Espaço -->
+<table height="72">
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+<!--Sobre a Empresa-->
+<div class="body-content" align="center">
+    <h1 class="text-titleContent" style="padding-bottom:5px">SOBRE A EMPRESA</h1>
+    <hr class="line" size="2" width="141px" color="black">
+    <div class="align-content" style="text-align:left">
+        <p class="text-textContent">
+            No Brasil, a  Top Seguros é líder no mercado de monitoramento e recuperação veicular. Oferecemos soluções de proteção
+            veicular para todos os tipos de veículos.
+            Rastreador veicular com garantia contra
+            roubo e furto em caso de não recuperação.
+            Até 70% mais barato que um seguro auto
+            tradicional, além de assistências e
+            comodidades que proporcionam ainda mais
+            segurança e tranquilidade às pessoas.
+        </p>
+    </div>
+</div>
+
+<!--MODAL SOLICITAÇÃO DE PLANO-->
+<div id="open-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px;">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Faça sua</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Cotação Agora!</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Vamos lá, insira os dados do seu veículo e o seus para que possamos lhe ajudar!</p>
+        <table height="44">
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <h3 style="padding-left: 10px" class="text-textContent6">Insira aqui os seus dados!</h3>
+        <form style="justify-content:center">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px">
+                <div>
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Nome Completo</label>
+                    </div>
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Data de Nascimento</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Telefone</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <h3 style="padding-left: 10px" class="text-textContent6">Insira aqui os seus dados do seu veículo!</h3>
+        <form style="justify-content:center">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px">
+                <div>
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Modelo</label>
+                    </div>
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Placa</label>
+                    </div>
+                </div>
+               <div>
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Marca</label>
+                    </div>
+
+                    <div class="single-input">
+                        <input class="input" type="text" maxlength="11" required />
+                        <label>Cor</label>
+                    </div>
+               </div>
+            </div>
+        </form>
+        <h3 style="padding-left: 10px" class="text-textContent6">Caso necessário, adicione um comentário!</h3>
+        <textarea style="width: 100%; border-radius: 12px; border: solid 1px black" name="Text1" rows="5"></textarea>
+        <a style="float:right" href="#"><button class="cancelButton">Cancelar</button></a>
+        <a style="float:right;margin-right: 20px" href="#open-politica-modal-finish"><button class="submitButton">Enviar</button></a>
+       
+       
+    </div>
+</div>
+
+<!--MODAL PRIVACIDADE-->
+<div id="open-politica-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 675px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Politica de</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Privacidade</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Aqui na Top Seguro, temos uma equipe de segurança dedicada 24hs a proteger nossos clientes de roubo e furto. A sua privacidade é importante para nós. É política da Top Seguros respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site topseguros. Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazendo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+        <a style="float:right; padding-right: 16px; padding-left: 16px" href="#"><button class="submitButton">Ok</button></a>
+    </div>
+</div>
+
+<div id="open-politica-modal-finish" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 370px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Solicitação</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Enviada!</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Enviamos sua solicitação para um de nossos vendedores, aguarde o retorno para mais informações!</p>
+        <div style="text-align: center;">
+            <a href="#"><button class="submitButton" style="padding-right: 23px; padding-left: 23px">Ok</button></a>
+       </div>
+    </div>
+</div>
+
+<!--MODAL PLANO COMUM-->
+<div id="open-pc-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 370px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Plano</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Comum</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Plano ideal para pessoas que buscam custo baixo, a segurança que cabe no seu bolso.</p>
+        <a style="float:right; padding-right: 16px; padding-left: 16px" href="#"><button class="submitButton">Ok</button></a>
+    </div>
+</div>
+
+<!--MODAL PLANO PREMIUM-->
+<div id="open-pp-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 370px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Plano</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Premium</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat"> Plano com mais competências e trás melhores aproveitamentos para cliente com mais interesses.</p>
+        <a style="float:right; padding-right: 16px; padding-left: 16px" href="#"><button class="submitButton">Ok</button></a>
+    </div>
+</div>
+<!--MODAL PLANO SUPER -->
+<div id="open-ps-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 370px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Plano</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Super</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Com o nível SUPER, o cliente mais abonado possuirá mais requinte com os seus seguros.</p>
+        <a style="float:right; padding-right: 16px; padding-left: 16px" href="#"><button class="submitButton">Ok</button></a>
+    </div>
+</div>
+<!-- Espaço -->
+<table height="72">
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+<!--Planos-->
+<div class="body-content" align="center">
+    <h1 class="text-titleContent" style="padding-bottom:5px">
+        PLANOS
+    </h1>
+    <hr class="line" size="2" width="141px" color="black">
+    <div class="align-content" style="text-align:center">
+        <p class="text-textContent">
+            Existe um tipo de plano de carro ideal para você
+        </p>
+
+        <table style="padding: 38px 0" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tr style="display: flex; flex-wrap: wrap;">
+
+                <td style="padding-right: 9px; margin-bottom:10px; ">
+                        <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349; padding-bottom:10px" align="center">
+                            <tr>
+                                <td align="left" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86">
+                                    <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                        <tr>
+                                            <td style="">
+                                                <table>
+                                                    <tr>
+                                                        <td style="padding-right: 12px">
+                                                            <img src="~/img/lock.png" width="48" height="41">
+                                                        </td>
+                                                        <td>
+                                                            <font class="font-titleContent">
+                                                                PLANO
+                                                                <br>
+                                                                <b style="font-weight: normal">COMUM</b>
+                                                            </font>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                    <p class="text-tableContent">
+                                        Plano ideal para pessoas que buscam custo baixo, a segurança que cabe no seu bolso.
+                                    </p>
+                                    <hr style="margin-top: 16px; height: 1px" / >
+                                <a href="#open-pc-modal" style="cursor: pointer; float:right; text-decoration: none; margin-top: 10px; font-family: Montserrat"><p style=" color:white">Ver detalhes »</p></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;padding-bottom:10px">
+                        <tr>
+                            <td align="left" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td >
+                                            <table>
+                                                <tr>
+                                                    <td style=" padding-right: 12px">
+                                                        <img src="~/img/lock.png" width="48" height="41">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            PLANO
+                                                            <br>
+                                                            <b style="font-weight: normal">PREMIUM</b>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Plano com mais competências e trás melhores aproveitamentos para cliente com mais interesses.
+                                </p>
+                                <hr / style="margin-top: 16px; height: 1px">
+                                <a href="#open-pp-modal" style="cursor: pointer; float:right; text-decoration: none; margin-top: 10px; font-family: Montserrat"><p style=" color:white">Ver detalhes »</p></a>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;padding-bottom:10px">
+                        <tr>
+                            <td align="left" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86" cellpadding="0" cellspacing="0">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style=" padding-right: 12px">
+                                                        <img src="~/img/lock.png" width="48" height="41">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            PLANO
+                                                            <br>
+                                                            <b style="font-weight: normal">SUPER</b>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 13px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Com o nível SUPER, o cliente mais abonado possuirá mais requinte com os seus seguros.
+                                </p>
+                                <hr / style="margin-top: 35px; height: 1px">
+                                <a href="#open-ps-modal" style="cursor: pointer; float:right; text-decoration: none; margin-top: 10px; font-family: Montserrat"><p style=" color:white">Ver detalhes »</p></a>
+                               
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Espaço -->
+<table height="12">
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+<!--Assistências-->
+<div class="body-content" align="center">
+    <h1 class="text-titleContent" style="padding-bottom:5px">
+        ALGUMAS DE NOSSAS<br> ASSISTÊNCIAS
+    </h1>
+    <hr class="line" size="2" width="141px" color="black">
+    <div class="align-content" style="text-align:center">
+        <p class="text-textContent">
+            Com as nossas Assistências você fica ainda mais seguro e tranquilo!
+        </p>
+        <table style="padding: 56px 0; direction: ltr;" cellspacing="0" cellpadding="0" border="0">
+            <tr style="display: flex; flex-wrap: wrap; justify-content: center">
+                <td style="padding-right: 9px; float: none; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/pessoa.png" width="48" height="48">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            ASSISTÊNCIA À
+                                                            <b style="font-weight: 400;">Guincho</b>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 5px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Com essa assistência você tem suporte 24hrs em caso de mal funcionamento do veículo e precise transistar novamente.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/pessoa.png" width="48" height="48">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            ASSISTÊNCIA À
+                                                            <b style="font-weight: 400;">Pane elétrica</b>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Em caso de curto circuto e outros mal funcionamentos elétricos, 24 hrs de suporte
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/pessoa.png" width="48" height="48">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            ASSISTÊNCIA À
+                                                            <b style="font-weight: 400;">Troca de pneu</b>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Caso seu pneu fure ou sobra com outros enteperes, suporte 24 hrs.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/pessoa.png" width="48" height="48">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            ASSISTÊNCIA À
+                                                            <b style="font-weight: 400;">Pedágio</b>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Você tem direito a um Zona Livre para passar pedágios sem precisar parar para pagar, em uso mensal
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--Coberturas-->
+<div class="body-content" align="center">
+    <h1 class="text-titleContent" style="padding-bottom:5px">
+        ALGUMAS DE NOSSAS<br> COBERTURAS
+    </h1>
+    <hr class="line" size="2" width="141px" color="black">
+    <div class="align-content" style="text-align:center">
+        <p class="text-textContent">
+            As proteções contratadas junto às seguradoras são chamadas coberturas. Elas constam na apólice da seguradora, indicando a quais eventos ele terá amparo financeiro se acontecerem.
+        </p>
+        <table style="padding: 56px 0" cellspacing="0" cellpadding="0" border="0">
+            <tr style="display: flex; flex-wrap: wrap; justify-content: center">
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/batida.png" width="48" height="41">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            COBERTURA A COLISÕES
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Conserto de danos no valor de até 60% da Tabela FIPE do seu veículo em caso de sinistros.
+
+
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/ladrao.png" width="42" height="42">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            ROUBO E
+                                                            FURTO
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    O Seguro “Roubo e Furto” garante a indenização se o seu veículo for roubado ou furtado e não encontrado após a ação dos criminosos. Essa proteção evita que você saia no prejuízo.
+
+
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86" cellpadding="0" cellspacing="0">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/atropelo.png" width="55" height="50">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            DANOS A
+                                                            TERCEIROS
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 13px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    O seguro para terceiros indeniza os danos causados por você em outro veículo ou pessoas. Dessa maneira, a seguradora arca com os custos de conserto do outro carro ou eventuais gastos hospitalares.
+
+
+
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding-right: 9px; margin-bottom:10px">
+                    <table width="241" height="245" cellspacing="0" cellpadding="0" border="0" style="border-radius: 16px; background-color:#397349;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 7px 7px 0px 7px;" width="226" height="86">
+                                <table width="226" height="86" style="background-color: #FFFFFF; border-radius: 16px;">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td style="padding-left: 12px; padding-right: 14px">
+                                                        <img src="~/img/fogo.png" width="46" height="45">
+                                                    </td>
+                                                    <td>
+                                                        <font class="font-titleContent">
+                                                            INCENDIOS E
+                                                            DANOS NATURAIS
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="226" style="padding: 15px 10px 0px 10px; max-width: 226px">
+                                <p class="text-tableContent">
+                                    Cobertura para enchentes, quedas de árvores, temporais, incêndio, etc.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Espaço -->
+<table height="12">
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+<footer>
+    <table style="background-color:#397349; width:100%; height: 198px;">
+        <tr>
+            <td align="center" style="padding-top: 12px;">
+                <table cellspacing="0" cellpadding="0" border="0"
+                       style="max-width:850px;direction:ltr;" align="center">
+                    <tr>
+                        <td align="center">
+                            <table style="max-width:1000px;direction:ltr;" align="center" cellspacing="0" cellpadding="0"
+                                   border="0">
+                                <tr style="">
+                                    <th width="50%" border="0"
+                                        style="padding-right:32px;"
+                                        class="padding-icons">
+                                        <table class="centraliza" cellspacing="0"
+                                               cellpadding="0" border="0"
+                                               style="max-width:600px;direction:ltr;" align="center">
+                                            <tr>
+                                                <td align="center" width="50%">
+                                                    <table align="center">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <img src="~/img/tsblogo-removebg-preview.png" width="180">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <font class="text-titleContent1"><b>Todos os direitos reservados à Top Seguros Brasil - 2022 ©</b></font>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th width="50%" border="0"
+                                        class="padding-icons">
+                                        <table class="centraliza" cellspacing="0"
+                                               cellpadding="0" border="0"
+                                               style="max-width:500px;direction:ltr;" align="center">
+                                            <tr>
+                                                <td align="center" width="50%" valign="top">
+                                                    <table align="left">
+                                                        <tr>
+                                                            <td align="left" style="padding-top: 21px">
+                                                                <font class="text-titleContent1"><b>CONTATOS</b></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" style="padding-top: 21px">
+                                                                <font class="text-titleContent1"><b>EMAIL</b></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" style="padding-top: 4px">
+                                                                <font class="text-titleContent1">contato@topsegsbrasil.com</font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr style="display: flex; flex-wrap: wrap">
+                                                            <th>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="~/img/telefone.png" width="64" height="42">
+                                                                        </td>
+                                                                        <td>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <font class="text-titleContent1"><b>TELEFONE</b></font>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <font class="text-tableContent">(11) 2143-6311</font>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                            <th>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="~/img/whatsapp.png" width="64" height="38">
+                                                                        </td>
+                                                                        <td>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <font class="text-titleContent1"><b>WHATSAPP</b></font>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <font class="text-tableContent">(11) 97121-6246</font>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</footer>

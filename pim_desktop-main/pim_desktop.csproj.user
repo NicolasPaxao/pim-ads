@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Components\DataGridCustom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Components\SwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Views\AuthView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\BaseLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CrudAssistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CrudAutomovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CrudCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CrudCobertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CrudPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CrudSeguradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\DesempenhoComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\GerarApolice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Modals\CreateResponseModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Modals\DeleteModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Modals\InfoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Partials\FormClientePj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Partials\FormClientePf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RealizarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RecursosHumanos\CrudFuncionarioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RecursosHumanos\DesempenhoDoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Relatorios\ApoliceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Relatorios\DesempenhoEmpresa\DesemEmpReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Relatorios\DesempenhoFuncionario\DesemFunReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\SuporteAoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

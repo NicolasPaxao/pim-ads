@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+.cabecalhoPrincipal .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.centerContainer{
+    max-width: 1156px;
+    margin: 0 auto;
+}
+.headerContainer {
+    max-width: 1265px;
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.background {
+    width: 100% !important;
+    background-repeat : no-repeat;
+    background-image: url(../img/back.png);
+    object-fit: contain;
+}
+
+.cabecalhoPrincipal-logo {
+    display: flex !important;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.text-Title {
+    font-size: 32px !important;
+    font-family: Montserrat !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+}
+
+.text-titleContent {
+    font-size: 24px !important;
+    line-height: 29.26px !important;
+    font-family: Montserrat !important;
+    text-align: center !important;
+    color: black !important;
+}
+
+.text-titleContent3 {
+    font-size: 24px !important;
+    line-height: 29.26px !important;
+    font-family: Montserrat !important;
+    text-align: left !important;
+    color: black !important;
+}
+
+.text-textContent6 {
+    font-size: 14px !important;
+    line-height: 19.5px !important;
+    max-width: 985px !important;
+    font-family: Montserrat !important;
+}
+
+.text-titleContent2 {
+    font-size: 26px !important;
+    font-family: Montserrat !important;
+    text-align: left !important;
+    color: black !important;
+}
+
+.text-titleContent1 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-family: Montserrat !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+}
+
+.text-subTitle {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-family: Montserrat !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    font-weight: normal !important;
+}
+
+.text-textContent {
+    font-size: 16px !important;
+    line-height: 19.5px !important;
+    max-width: 985px !important;
+    font-family: Montserrat !important;
+}
+
+.background {
+    width: 100% !important;
+    background-color: black;
+    object-fit: contain;
+}
+
+.button-style {
+    width: 218px !important;
+    height: 55px !important;
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.align-content {
+    max-width: 1000px !important;
+    padding: 16px 40px !important;
+}
+
+.text-tableContent {
+    font-family: Montserrat !important;
+    font-size: 14px !important;
+    line-height: 17.07px !important;
+    color: #FFFFFF !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+}
+
+.font-titleContent {
+    font-family: Montserrat !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+media screen and (max-width: 1050px) {
+    .responsive-content
+
+{
+    float: none !important;
+    align: center !important;
+}
+
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.35);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+    .modal-window:target {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-window > div {
+        width: 493px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        background: white;
+    }
+
+    .modal-window header {
+        font-weight: bold;
+    }
+
+    .modal-window h1 {
+        font-size: 150%;
+        margin: 0 0 15px;
+    }
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+    .modal-close:hover {
+        color: black;
+    }
+
+.modal-window > div {
+    border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.input {
+    border: none;
+    padding: 8px;
+}
+
+.single-input {
+    position: relative;
+    margin: 30px 0;
+}
+
+   .single-input label {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        color: rgb(100,100,100);
+        cursor: text;
+        transition: all 0.2s ease-in-out;
+    }
+
+   .single-input .input {
+        width: 100%;
+        padding: 5px;
+        border: 0;
+        border-bottom: 2px solid rgb(200,200,200);
+        outline: 0;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+    }
+
+        .single-input .input:focus,
+        .single-input .input:valid {
+            border-bottom: 2px solid #397349;
+        }
+
+            .single-input .input:focus ~ label,
+            .single-input .input:valid ~ label {
+                transform: translateY(-24px);
+                font-size: 12px;
+                color: #397349;
+            }
+
+.submitButton {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: Montserrat;
+    margin-top: 16px;
+    background-color: #397349;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 24px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: Montserrat;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: solid 1px black;
+    padding: 16px 24px;
+    cursor: pointer;
+}

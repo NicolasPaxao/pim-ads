@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LoginActivity">
+
+    <View
+        android:id="@+id/topCard"
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:background="@drawable/shape"/>
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo_login" />
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topCard"
+        android:layout_marginTop="37dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/textBlack"
+        android:text="@string/welcome"
+        android:textSize="36sp"
+        />
+    <TextView
+        android:id="@+id/welcomeSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/textBlack"
+        android:layout_below="@+id/welcome"
+        android:text="@string/welcomeSub"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeSub"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="62dp"
+        android:autofillHints="true"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/inputSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="@color/black"
+        android:layout_below="@+id/inputEmail"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="true"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        tools:ignore="TextFields" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/inputSenha"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/entrar"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/primaryColor"
+        />
+    <TextView
+        android:id="@+id/requestOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="57dp"
+        android:textColor="@color/textBlack"
+        android:layout_below="@+id/btnLogin"
+        android:text="@string/requestOrder"
+        android:textSize="14sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestOrder"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/requestOrder"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0"
+        android:text="@string/requestOrderButtonText"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/primaryColor"
+        app:strokeWidth="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.PlanoActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="22dp"
+        android:textSize="24sp"
+        android:text="Minhas Apólices"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/recyclerview"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: #397349;
+        font-family: Montserrat;
+        width: 100%;
+        height: 100%;
+    }
+
+    #form {
+        margin-top: 8vh;
+        align-self: center;
+        max-width: 450px;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .bloco-titulo {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .bloco-titulo2 {
+        text-align: center;
+        padding: 32px 32px 0 32px;
+    }
+
+    .input {
+        border: none;
+        padding: 8px;
+    }
+
+    .botão {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        font-family: Montserrat;
+        margin-top: 16px;
+        background-color: #397349;
+        border-radius: 8px;
+        border: none;
+        padding: 16px 24px;
+        cursor: pointer;
+    }
+
+    .error {
+        text-align: left;
+        margin: 12px 0;
+        font-weight: bold;
+        font-size: 16px;
+        color: red;
+    }
+
+    .sucess {
+        margin: 12px 0;
+        align-self: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: green;
+    }
+
+    .text-obs {
+        text-align: right;
+    }
+
+</style>
+
+@model pim_web.ViewModels.LoginViewModel
+
+<header class="cabecalhoPrincipal" style="background-color: #FFFFFF">
+    <div class="container">
+        <img src="~/img/tsblogo-removebg-preview.png" width="120">
+
+        <nav class="cabecalhoPrincipal-nav">
+            <a class="cabecalhoPrincipal-nav-link" asp-action="Index" asp-controller="Home" style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #000000; text-decoration: none;padding-right: 30px">HOME</a>
+            <a class="cabecalhoPrincipal-nav-link" href="#open-politica-modal" style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #000000; text-decoration: none;padding-right: 30px">PRIVACIDADE</a>
+            <div style="padding-right: 46px;">
+                <a asp-action="LoginView" asp-controller="Auth"><img src="~/img/iconeuser_black.png" width="42"></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div id="open-politica-modal" class="modal-window">
+    <div style="padding: 54px 50px 20px 50px; width: 675px">
+        <a href="#" title="Close" class="modal-close" style="font-family:Montserrat">X</a>
+        <h2 style="padding-left: 10px" class="text-titleContent3">Politica de</h2>
+        <h1 style="padding-left: 10px" class="text-titleContent2">Privacidade</h1>
+        <hr style="margin: 20px 0; padding-left: 10px" />
+        <p style="padding-left: 10px; font-family:Montserrat">Aqui na Top Seguro, temos uma equipe de segurança dedicada 24hs a proteger nossos clientes de roubo e furto. A sua privacidade é importante para nós. É política da Top Seguros respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site topseguros. Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazendo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+        <a style="float:right; padding-right: 16px; padding-left: 16px" href="#"><button class="submitButton">Ok</button></a>
+    </div>
+</div>
+
+<div id="form">
+    <form method="post">
+        <div class="bloco-titulo">
+            <h2>FAÇA SEU LOGIN</h2>
+            <h5>Já possuo cadastro!</h5>
+        </div>
+
+        <div class="single-input">
+            <input asp-for="@Model.Email" type="text" class="input" id="email" >
+            <label for="Email">E-mail</label>
+        </div>
+        <div class="single-input">
+            <input asp-for="@Model.Senha" type="text" class="input" id="senha">
+            <label for="Senha">Senha</label>
+        </div>
+
+        @if (TempData["resultSucess"] != null)
+        {
+            <div>
+                <p class="sucess">@TempData["resultSucess"]</p>
+            </div>
+        }
+        @if (TempData["responseFail"] != null){
+            <div>
+                <p class="error">@TempData["responseFail"]</p>
+            </div>
+        } 
+
+        <div id="btn">
+            <button class="botão" type="submit">Entrar</button>
+        </div>
+        <div class="bloco-titulo2">
+            <h5><a asp-action="RegisterView" asp-controller="Auth" style="color:#397349; text-decoration:none;">Ainda não possuo login, desejo me cadastrar!</a></h5>
+        </div>
+    </form>
+</div>

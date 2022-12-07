@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="19dp"
+        app:strokeColor="@color/primaryColor">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/primaryColor" />
+
+            <TextView
+                android:id="@+id/id_apolice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="ID: #"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/id_apolice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/id_apolice_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="20dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/automovel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:layout_toRightOf="@id/id_apolice"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="20dp"
+                android:text="AAAAAAAAAA"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <!--Seguradora-->
+            <TextView
+                android:id="@+id/auto_dados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_view"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="Dados da Apólice"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/plano_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_dados"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="14dp"
+                android:text="PLANO: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/plano_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_dados"
+                android:layout_toRightOf="@id/plano_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="NOME DO PLANO"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <!--Contratante-->
+            <TextView
+                android:id="@+id/contratante_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/plano_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="14dp"
+                android:text="CONTRANTE: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/contratante_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/plano_name"
+                android:layout_toRightOf="@id/contratante_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="NOME DO CONTRATANTE"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <!--DATA DE CRIAÇÃO-->
+            <TextView
+                android:id="@+id/dt_contratacao_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contratante_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="14dp"
+                android:text="D.T. CONTRATO: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/dt_contratacao_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contratante_name"
+                android:layout_toRightOf="@id/dt_contratacao_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="DD/MM/AAAA"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <!--TEMPO CONTRATAÇÃO-->
+            <TextView
+                android:id="@+id/tempo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dt_contratacao_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="14dp"
+                android:text="TEMPO DE VIGÊNCIA: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tempo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dt_contratacao_name"
+                android:layout_toRightOf="@id/tempo_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="XX mêses"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <!--VALOR-->
+            <TextView
+                android:id="@+id/vl_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempo_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="14dp"
+                android:text="VALOR: R$"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempo_name"
+                android:layout_toRightOf="@id/vl_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="669,00"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <!--VALOR-->
+            <TextView
+                android:id="@+id/pagamento_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="14dp"
+                android:text="FORMA PAGMENTO: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/pagamento_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vl_name"
+                android:layout_toRightOf="@id/pagamento_title"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="14dp"
+                android:text="PIX"
+                android:textColor="@color/black"
+
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/lineInferior"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pagamento_title"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <TextView
+                android:id="@+id/go_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineInferior"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="4dp"
+                android:paddingLeft="23dp"
+                android:paddingBottom="10dp"
+                android:text="Vejas coberturas e assistências"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/go_details_btn"
+                android:layout_width="50dp"
+                android:layout_below="@id/lineInferior"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/ic_details"
+                android:background="@color/white"
+                android:padding="0dp"
+                android:layout_toRightOf="@+id/go_details"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

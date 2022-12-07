@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_arrow_back_white.xml" value="0.1" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_assist.xml" value="0.18" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_cars.xml" value="0.18" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_coberturas.xml" value="0.18" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_details.xml" value="0.1425" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_menu.xml" value="0.18" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/ic_menu_camera.xml" value="0.18" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/my_button_bg.xml" value="0.123" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/shape.xml" value="0.163" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/shape_button.xml" value="0.163" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/drawable/shape_home.xml" value="0.179" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/font/.xml" value="0.14322916666666666" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout-v28/activity_login.xml" value="0.23802083333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/about_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_assistencias.xml" value="0.21458333333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_automoveis.xml" value="0.264" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_coberturas.xml" value="0.21458333333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_details_apolice.xml" value="0.21510416666666668" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_login.xml" value="0.24010416666666667" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/activity_plano.xml" value="0.22864583333333333" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/app_bar_home_page.xml" value="0.16" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/card_apolice.xml" value="0.264" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/card_assistencia.xml" value="0.264" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/card_automovel.xml" value="0.19947916666666668" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/card_cobertura.xml" value="0.264" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/content_home_page.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/custom_imageview.xml" value="0.11770833333333333" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/fragment_home.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/fragment_slideshow.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/help_dialog.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/logout_dialog.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/nav_header_home_page.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/layout/privacy_dialog.xml" value="0.19114583333333332" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/menu/activity_main_drawer.xml" value="0.16875" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/menu/home_page.xml" value="0.16875" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/menu/menu_drawer.xml" value="0.19010416666666666" />
+        <entry key="..\:/PIM/pim_mobile/app/src/main/res/xml/network_security_config.xml" value="0.14010416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

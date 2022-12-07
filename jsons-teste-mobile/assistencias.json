@@ -1,0 +1,34 @@
+[
+    {
+        "id": 2,
+        "idPlano": 2,
+        "nome": "Guincho",
+        "empresaSuporte": "Guincho Dois Irmãos LTDA",
+        "descriacao": "Suporte de guincho em todo o território nacional, trazendo a melhor assistência em caso de problemas no seu veículo, assistência 24 horas.",
+        "contato": "11988323723"
+    },
+    {
+        "id": 3,
+        "idPlano": 2,
+        "nome": "Eletricista",
+        "empresaSuporte": "Gensh Elétrica",
+        "descriacao": "Caso precise de um suporte para um mal funcionamento elétrico ou afins, essa é a sua assistência 24h e a sua disposição.",
+        "contato": "11922578631"
+    },
+    {
+        "id": 4,
+        "idPlano": 3,
+        "nome": "Guincho",
+        "empresaSuporte": "Dois Irmãos",
+        "descriacao": "Assistências necessária para qualquer momento que ocorra de seu veículo falhar e precisar de manutenção, assistencia 24 hrs e em qualquer região do Brasil.",
+        "contato": "11922548754"
+    },
+    {
+        "id": 5,
+        "idPlano": 3,
+        "nome": "Pane Eletrica",
+        "empresaSuporte": "Ortech Elétrica LTDA",
+        "descriacao": "Assistências necessária para qualquer momento que ocorra de seu veículo estiver com problemas elétricos assistencia 24 hrs e em qualquer região do Brasil.",
+        "contato": "11981541748"
+    }
+]

@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\americanexpress.png" />
+    <None Include="wwwroot\img\atropelo.png" />
+    <None Include="wwwroot\img\back.png" />
+    <None Include="wwwroot\img\background.png" />
+    <None Include="wwwroot\img\batida.png" />
+    <None Include="wwwroot\img\boleto.png" />
+    <None Include="wwwroot\img\dinersclub.png" />
+    <None Include="wwwroot\img\elo.png" />
+    <None Include="wwwroot\img\flavicon.ico" />
+    <None Include="wwwroot\img\fogo.png" />
+    <None Include="wwwroot\img\icon.png" />
+    <None Include="wwwroot\img\iconeuser.png" />
+    <None Include="wwwroot\img\ladrao.png" />
+    <None Include="wwwroot\img\lock.png" />
+    <None Include="wwwroot\img\mastercard.png" />
+    <None Include="wwwroot\img\pessoa.png" />
+    <None Include="wwwroot\img\pix.png" />
+    <None Include="wwwroot\img\telefone.png" />
+    <None Include="wwwroot\img\transito.jpg" />
+    <None Include="wwwroot\img\transitoedit.jpg" />
+    <None Include="wwwroot\img\tsblogo-removebg-preview.png" />
+    <None Include="wwwroot\img\tsblogo.png" />
+    <None Include="wwwroot\img\user.png" />
+    <None Include="wwwroot\img\visa.png" />
+    <None Include="wwwroot\img\whatsapp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

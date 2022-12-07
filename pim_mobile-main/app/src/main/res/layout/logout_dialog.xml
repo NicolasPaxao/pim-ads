@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aboutDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryColor"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/aboutSubtitle"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="Confirmação de saída"/>
+    <View
+        android:id="@+id/topCard"
+        android:layout_below="@id/aboutSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+    <TextView
+        android:id="@+id/content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/topCard"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/sureToExit"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/closeDialog"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/exitButton"
+        android:layout_below="@+id/content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0"
+        android:textStyle="bold"
+        android:text="Cancelar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exitButton"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0"
+        android:textStyle="bold"
+        android:text="Sair"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="19dp"
+        app:strokeColor="@color/primaryColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:background="@color/primaryColor" />
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="63dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_coberturas" />
+
+            <TextView
+                android:id="@+id/cobertura_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="COBERTURA A"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cobertura_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cobertura_title"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="20dp"
+                android:text="Nome da cobertura"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/description_title_cobertura"
+                android:layout_below="@id/top_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="14dp"
+                android:justificationMode="inter_word"
+                android:text="DESCRIÇÃO:  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
+                android:textColor="@color/black"
+                android:paddingBottom="16dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/indenizacao_title"
+                android:layout_below="@id/description_title_cobertura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="23dp"
+                android:paddingTop="6dp"
+                android:text="INDENIZAÇÃO: "
+                android:textColor="@color/black"
+                android:paddingBottom="16dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/indenizacao_name"
+                android:layout_below="@id/description_title_cobertura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/indenizacao_title"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:paddingTop="6dp"
+                android:text="00% DO VEÍCULO"
+                android:paddingBottom="16dp"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

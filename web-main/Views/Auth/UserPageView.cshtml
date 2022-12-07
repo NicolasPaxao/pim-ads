@@ -1,0 +1,71 @@
+﻿<style>
+    * {
+        margin: 0px;
+    }
+
+    .titleUser {
+        font-size: 22px !important;
+        font-family: Montserrat !important;
+        font-weight: bold;
+        color: black !important;
+    }
+
+    .contentUser {
+        font-size: 22px !important;
+        font-family: Montserrat !important;
+        font-weight: normal;
+        color: black !important;
+    }
+</style>
+
+<header style="background-color: #397349">
+    <div class="headerContainer">
+        <a asp-action="Index" asp-controller="Home"><img src="~/img/tsblogo-removebg-preview.png" width="120"></a>
+        <nav class="cabecalhoPrincipal-nav">
+            <a style="font-size: 16px; font-weight: bold ;font-family: Montserrat; color: #FFFFFF; text-decoration: none;padding-right: 30px">Bem-vindo <span>@TempData["Nome"]!</span></a>
+            <div style="padding-right: 46px;">
+                <a asp-action="LoginView" asp-controller="Auth"><img src="~/img/iconeuser.png" width="42"></a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div style="height: 22px">
+</div>
+<div class="centerContainer" style="padding-left: 20px; padding-right: 20px">
+    <h2 style="padding-left: 10px" class="text-titleContent3">Aqui é a sua área do cliente</h2>
+    <h1 style="padding-left: 10px" class="text-titleContent2">Desfrute nossos recursos!</h1>
+    <hr style="margin: 20px 0; padding-left: 10px" />
+    <div style="height: 37px"></div>
+    @if((@TempData["TipoCliente"]).ToString() == "Pessoa Física"){
+    <div style="display: flex; flex-wrap: wrap;justify-content: left; gap: 28px">
+        <p class="titleUser">NOME: <span class="contentUser">@TempData["Nome"]</span></p>
+        <p class="titleUser">CPF: <span class="contentUser">@TempData["Cpf"]</span></p>
+        <p class="titleUser">CNH: <span class="contentUser">@TempData["Cnh"]</span></p>
+        <p class="titleUser">RG: <span class="contentUser">@TempData["Rg"]</span></p>
+        <p class="titleUser">E-MAIL: <span class="contentUser">@TempData["Email"]</span></p>
+        <p class="titleUser">DATA DE NASCIMENTO: <span class="contentUser">@TempData["DataNascimento"]</span></p>
+        <p class="titleUser">ESTADO CIVIL: <span class="contentUser">@TempData["EstadoCivil"]</span></p>
+        <p class="titleUser">SEXO: <span class="contentUser">@TempData["Sexo"]</span></p>
+        <p class="titleUser">CEP: <span class="contentUser">@TempData["Cep"]</span></p>
+        <p class="titleUser">LOGRADOURO: <span class="contentUser">@TempData["Logradouro"]</span></p>
+        <p class="titleUser">TIPO DO CLIENTE: <span class="contentUser">@TempData["TipoCliente"]</span></p>
+    </div>
+    }
+    @if ((@TempData["TipoCliente"]).ToString() == "Pessoa Jurídica")
+    {
+    <div style="display: flex; flex-wrap: wrap;justify-content: left; gap: 28px">
+        <p class="titleUser">RAZÃO SOCIAL: <span class="contentUser">@TempData["RazaoSocial"]</span></p>
+        <p class="titleUser">CONTRATO SOCIAL: <span class="contentUser">@TempData["ContratoSocial"]</span></p>
+        <p class="titleUser">CNPJ: <span class="contentUser">@TempData["Cnpj"]</span></p>
+        <p class="titleUser">E-MAIL: <span class="contentUser">@TempData["Email"]</span></p>
+        <p class="titleUser">DATA DE CRIAÇÃO: <span class="contentUser">@TempData["DataCriacao"]</span></p>
+
+        <p class="titleUser">CEP: <span class="contentUser">@TempData["Cep"]</span></p>
+        <p class="titleUser">LOGRADOURO: <span class="contentUser">@TempData["Logradouro"]</span></p>
+        <p class="titleUser">TIPO DO CLIENTE: <span class="contentUser">@TempData["TipoCliente"]</span></p>
+    </div>
+    }
+    <div style="height: 10vh;"></div>
+    <a class="submitButton" asp-action="Index" asp-controller="Home" style="text-decoration: none; float: right">Sair</a>
+</div>
+

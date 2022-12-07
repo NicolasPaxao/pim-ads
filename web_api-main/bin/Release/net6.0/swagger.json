@@ -1,0 +1,1552 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "web_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/apolice": {
+      "get": {
+        "tags": [
+          "Apolice"
+        ],
+        "summary": "Retorna uma lista de apolices.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApolicesModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Apolice"
+        ],
+        "summary": "Cria uma apolice nova",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ApolicesModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/apolice/{id}": {
+      "get": {
+        "tags": [
+          "Apolice"
+        ],
+        "summary": "Retorna uma apolice pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApolicesModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Apolice"
+        ],
+        "summary": "Altera os dados da apolice pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ApolicesModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Apolice"
+        ],
+        "summary": "Deleta o registro de uma apolice pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/assistencia": {
+      "get": {
+        "tags": [
+          "Assistencia"
+        ],
+        "summary": "Retorna uma lista de assistencias.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AssistenciaModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Assistencia"
+        ],
+        "summary": "Cria uma assistencia nova",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AssistenciaModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/assistencia/{id}": {
+      "get": {
+        "tags": [
+          "Assistencia"
+        ],
+        "summary": "Retorna uma assistencia pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AssistenciaModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Assistencia"
+        ],
+        "summary": "Altera os dados da assistencia pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AssistenciaModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Assistencia"
+        ],
+        "summary": "Deleta o registro de uma assistencia pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/automovel": {
+      "get": {
+        "tags": [
+          "Automovel"
+        ],
+        "summary": "Retorna uma lista de automoveis.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AutomovelModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Automovel"
+        ],
+        "summary": "Cria uma automovel novo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AutomovelModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/automovel/{id}": {
+      "get": {
+        "tags": [
+          "Automovel"
+        ],
+        "summary": "Retorna um automovel pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AutomovelModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Automovel"
+        ],
+        "summary": "Altera os dados do automovel pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AutomovelModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Automovel"
+        ],
+        "summary": "Deleta o registro de um automovel pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Retorna uma lista de clientes",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ClienteModel"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cliente/{id}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Retorna um cliente pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Altera os dados possíveis do cliente",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente/Pf": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Cria um cliente Pf",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente/Pj": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Cria um cliente Pj",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente/PfLogin/{cpf}": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Adiciona o login ao cliente Pf",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cpf",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente/PjLogin/{cnpj}": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Adiciona o login ao cliente Pj",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cnpj",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente/PfChangeStatus/{id}": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Muda o status do cliente",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cliente/Pf/{id}": {
+      "delete": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Deleta um cliente",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cobertura": {
+      "get": {
+        "tags": [
+          "Cobertura"
+        ],
+        "summary": "Retorna uma lista de coberturas.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CoberturaModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Cobertura"
+        ],
+        "summary": "Cria uma cobertura nova",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CoberturaModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cobertura/{id}": {
+      "get": {
+        "tags": [
+          "Cobertura"
+        ],
+        "summary": "Retorna uma cobertura pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CoberturaModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Cobertura"
+        ],
+        "summary": "Altera os dados da cobertura pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CoberturaModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Cobertura"
+        ],
+        "summary": "Deleta o registro de uma cobertura pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/funcionario": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "summary": "Retorna uma lista de funcionarios.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FuncionarioModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Funcionario"
+        ],
+        "summary": "Cria uma funcionario novo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/FuncionarioModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/funcionario/{id}": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "summary": "Retorna um funcionario pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/FuncionarioModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Funcionario"
+        ],
+        "summary": "Altera os dados do funcionario pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/FuncionarioModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Funcionario"
+        ],
+        "summary": "Deleta o registro de um usuário pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/funcionario/changeStatus/{id}": {
+      "put": {
+        "tags": [
+          "Funcionario"
+        ],
+        "summary": "Muda o status do funcionario baseado no Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/FuncionarioModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/plano": {
+      "get": {
+        "tags": [
+          "Plano"
+        ],
+        "summary": "Retorna uma lista de planos.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PlanosModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Plano"
+        ],
+        "summary": "Cria um plano novo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PlanosModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/plano/{id}": {
+      "get": {
+        "tags": [
+          "Plano"
+        ],
+        "summary": "Retorna um plano pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PlanosModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Plano"
+        ],
+        "summary": "Altera os dados do plano pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PlanosModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Plano"
+        ],
+        "summary": "Deleta o registro de um plano pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/auth/{email}, {senha}": {
+      "get": {
+        "tags": [
+          "RetornaCliente"
+        ],
+        "summary": "Retorna o cliente",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "email",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "senha",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ReturnClienteModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/seguradora": {
+      "get": {
+        "tags": [
+          "Seguradora"
+        ],
+        "summary": "Retorna uma lista de seguradoras.",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PlanoModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Seguradora"
+        ],
+        "summary": "Cria uma seguradora nova",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PlanoModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/seguradora/{id}": {
+      "get": {
+        "tags": [
+          "Seguradora"
+        ],
+        "summary": "Retorna uma seguradora pelo Id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PlanoModel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Seguradora"
+        ],
+        "summary": "Altera os dados da seguradora pelo Id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PlanoModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Seguradora"
+        ],
+        "summary": "Deleta o registro de uma seguradora pelo seu Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ApolicesModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idCliente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idPlano": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idFuncionario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "formaPagamento": {
+          "$ref": "#/definitions/FormaPagamento"
+        },
+        "valorSeguro": {
+          "format": "double",
+          "type": "number"
+        },
+        "dataCriacaoApolice": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "tempoContratacaoPorMes": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AssistenciaModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idPlano": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descriacao": {
+          "type": "string"
+        },
+        "contato": {
+          "type": "string"
+        }
+      }
+    },
+    "AutomovelModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idCliente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "modelo": {
+          "type": "string"
+        },
+        "marca": {
+          "type": "string"
+        },
+        "anoModelo": {
+          "type": "string"
+        },
+        "cor": {
+          "type": "string"
+        },
+        "placa": {
+          "type": "string"
+        },
+        "renavam": {
+          "type": "string"
+        },
+        "numeroMotor": {
+          "type": "string"
+        },
+        "crlv": {
+          "type": "string"
+        }
+      }
+    },
+    "ClienteModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "razaoSocial": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "senha": {
+          "type": "string"
+        },
+        "dataCriacao": {
+          "type": "string"
+        },
+        "cnpj": {
+          "type": "string"
+        },
+        "dataNascimento": {
+          "type": "string"
+        },
+        "cpf": {
+          "type": "string"
+        },
+        "cnh": {
+          "type": "string"
+        },
+        "telefone": {
+          "type": "string"
+        },
+        "tipoCliente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isAtivo": {
+          "type": "boolean"
+        }
+      }
+    },
+    "CoberturaModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idPlano": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descriacao": {
+          "type": "string"
+        },
+        "indenizacao": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "FormaPagamento": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "type": "integer"
+    },
+    "FuncionarioModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "senha": {
+          "type": "string"
+        },
+        "dataNascimento": {
+          "type": "string"
+        },
+        "cpf": {
+          "type": "string"
+        },
+        "rg": {
+          "type": "string"
+        },
+        "ctps": {
+          "type": "string"
+        },
+        "telefone": {
+          "type": "string"
+        },
+        "cargo": {
+          "type": "string"
+        },
+        "setor": {
+          "$ref": "#/definitions/Setor"
+        },
+        "isAtivo": {
+          "type": "boolean"
+        }
+      }
+    },
+    "PlanoModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "razaoSocial": {
+          "type": "string"
+        },
+        "cnpj": {
+          "type": "string"
+        },
+        "contratoSocial": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "telefone": {
+          "type": "string"
+        }
+      }
+    },
+    "PlanosModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nomePlano": {
+          "type": "string"
+        },
+        "idSeguradora": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tipoPlano": {
+          "$ref": "#/definitions/TipoPlano"
+        }
+      }
+    },
+    "ReturnClienteModel": {
+      "type": "object",
+      "properties": {
+        "cliente": {
+          "$ref": "#/definitions/ClienteModel"
+        },
+        "automoveis": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AutomovelModel"
+          }
+        },
+        "plano": {
+          "$ref": "#/definitions/PlanosModel"
+        },
+        "coberturas": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CoberturaModel"
+          }
+        },
+        "assistencias": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AssistenciaModel"
+          }
+        },
+        "apolice": {
+          "$ref": "#/definitions/ApolicesModel"
+        }
+      }
+    },
+    "Setor": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "type": "integer"
+    },
+    "TipoPlano": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "type": "integer"
+    }
+  }
+}

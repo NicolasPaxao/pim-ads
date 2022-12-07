@@ -1,0 +1,30 @@
+[
+    {
+        "id": 2,
+        "idPlano": 2,
+        "nome": "Acidente",
+        "descriacao": "Caso ocorra de incêndio atingir o veículo, 69% do valor do veículo em caso de perda total será coberto e 69% do valor da manutenção será por conta da empresa.",
+        "indenizacao": 69
+    },
+    {
+        "id": 4,
+        "idPlano": 2,
+        "nome": "Colisão",
+        "descriacao": "Em ocorrencia de colisão veícular, se houver perda total do veículo, 70% do valor do mesmo será indenizado na compra de outro e se for apenas manutenção, 70% do valor da mesma.",
+        "indenizacao": 70
+    },
+    {
+        "id": 5,
+        "idPlano": 3,
+        "nome": "Acidênte",
+        "descriacao": "Caso ocorra de incêndio atingir o veículo, 89% do valor do veículo em caso de perda total será coberto e 89% do valor da manutenção será por conta da empresa.",
+        "indenizacao": 89
+    },
+    {
+        "id": 6,
+        "idPlano": 3,
+        "nome": "Colisão de Veículos",
+        "descriacao": "Em ocorrência de colisão do veículo, 90% do valor do mesmo será indenizado na compra de outro e se for apenas manutenção, 90% do valor da mesma.",
+        "indenizacao": 90
+    }
+]

@@ -1,0 +1,7 @@
+Caso os arquivos estejam corrompidos ou algo assim, disponibilizarei os acessos ao Gitlab do projeto.
+Entre em contato: (11)988323723 ou nicolaspaxao@gmail.com
+
+Link dos JSON no GIST do GitHub:
+Cliente: https://gist.github.com/NicolasPaxao/b9f487c36c17ebe43038a37143d84ebc
+Assistências: https://gist.github.com/NicolasPaxao/1626d075a9f35fb055c755d5ff3c571b
+Coberturas: https://gist.github.com/NicolasPaxao/cdfb110a540928fd37f487601efd5ac7

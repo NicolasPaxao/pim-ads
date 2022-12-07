@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwkDaaSzkT0WgFSxCFp340gAAAAACAAAAAAAQZgAAAAEAACAAAACS7ohnCOa2iIVC2WrTvRr6fculbi5mG9JW/aYCV89DswAAAAAOgAAAAAIAACAAAADctZMjLyIz2QOTEkESvawdyknfijZUNO9lwqtUgQP52YAAAABbeXEm9bYfeWIdQx0lkC6rW5zBd6oK42MLSwcbTLXXiD9cLLe81XhbeAHCQ9lsA3QTn0t1IBnnmsJuP8Ruk1NOU9h2ZxjiFiq/3ru+o55D8qUUPE4CVtw8gUxu/0ubxYH97BSBMbCSwJd4H7ZzagWMbubcZvYvq6h7+kGuUp59DEAAAABwEBunEuS7tidACPVjfd9lbDUOEryMSr66muJwqmGyP7xBJ/JMXhn6ukvKtgrSKz9CI884+NJzCMBHaoZiCWO1</EncryptedPassword>
+    <History>True|2022-09-08T22:24:31.7883082Z;True|2022-09-08T19:17:08.5131201-03:00;True|2022-09-07T00:16:05.3782803-03:00;True|2022-09-06T23:37:28.3767158-03:00;True|2022-09-06T22:54:57.1503569-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="conexao">
+      <Value>Data Source=dbtsbseguros.database.windows.net%3bInitial Catalog=db_tsbseguros%3bUser Id=nicolas%3b Password=Nickvis20%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

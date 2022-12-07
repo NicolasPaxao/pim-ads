@@ -1,0 +1,17 @@
+﻿using pim_desktop.Enums;
+
+namespace pim_desktop.Model
+{
+    public class ClientePfModel: ClienteBaseModel
+    {
+        public string? Nome { get; set; }
+        public string? Cpf { get; set; }
+        public string? Cnh { get; set; }
+        public string? Rg { get; set; }
+        public string? DataNascimento { get; set; }
+        public EstadoCivil? EstadoCivil { get; set; }
+        public Sexo? Sexo { get; set; }
+        public TipoCliente? TipoCliente { get; set; }
+        public Status? Status { get; set; }
+    }
+}
